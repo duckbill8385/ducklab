@@ -345,11 +345,11 @@ h6 {
 
 /* Sub Page
 ------------------------------*/
-.sub-page .header {
+.publication-page .header {
   --background-color: rgba(21, 17, 13, 0.85); 
 }
 
-.sub-page .main {
+.publication-page .main {
   padding-top: 80px; /* 헤더 높이만큼 조정 */
 }
 
@@ -1084,7 +1084,7 @@ section,
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
-  padding: 300px 0;
+  padding: 1000px 0;
   position: relative;
 }
 
@@ -1101,7 +1101,7 @@ section,
 .recent-publications:before {
   content: "";
   /* background-color: color-mix(in srgb, var(--background-color), transparent 70%); */
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   inset: 0;
   z-index: 2;
