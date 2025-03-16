@@ -1084,7 +1084,7 @@ section,
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
-  padding: 120px 0;
+  padding: 150px 0;
   position: relative;
 }
 
@@ -1093,7 +1093,7 @@ section,
   inset: 0;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 130%;
   object-fit: cover;
   z-index: 1;
 }
