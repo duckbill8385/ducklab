@@ -1086,6 +1086,7 @@ section,
   --heading-color: #ffffff;
   padding: 80px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .recent-publications .slider-bg {
@@ -1118,6 +1119,17 @@ section,
 .recent-publications .event-item h3 {
   font-weight: 700;
   font-size: 30px;
+}
+
+.events .event-item .price {
+  font-size: 26px;
+  font-family: var(--default-font);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.events .event-item .price span {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .recent-publications .event-item ul {
