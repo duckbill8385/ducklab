@@ -343,13 +343,13 @@ h6 {
   --background-color: rgba(21, 17, 13, 0.85);
 }
 
-/* Sub Page
+/* Second Page
 ------------------------------*/
-.publication-page .header {
+.second-page .header {
   --background-color: rgba(21, 17, 13, 0.85); 
 }
 
-.publication-page .main {
+.second-page .main {
   padding-top: 80px; /* 헤더 높이만큼 조정 */
 }
 
