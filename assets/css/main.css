@@ -1100,7 +1100,7 @@ section,
 
 .recent-publications:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1222,6 +1222,17 @@ section,
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+.people .prof-name a {
+  font-size: 20px;
+  color: var(--heading-color);
+  background: var(--background-color);
+  padding-right: 10px;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
 .people .people-name {
