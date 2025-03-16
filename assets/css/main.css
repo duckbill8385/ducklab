@@ -1175,7 +1175,7 @@ section,
 /*--------------------------------------------------------------
 # People Section
 --------------------------------------------------------------*/
-.people .menu-filters {
+.people .people-filters {
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -1183,7 +1183,7 @@ section,
   border-radius: 50px;
 }
 
-.people .menu-filters li {
+.people .people-filters li {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 10px;
   cursor: pointer;
@@ -1196,28 +1196,28 @@ section,
   font-family: var(--heading-font);
 }
 
-.people .menu-filters li:hover,
-.people .menu-filters li.filter-active {
+.people .people-filters li:hover,
+.people .people-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.people .menu-filters li:last-child {
+.people .people-filters li:last-child {
   margin-right: 0;
 }
 
-.people .menu-item {
+.people .people-item {
   margin-top: 50px;
   position: relative;
 }
 
-.people .menu-img {
-  width: 80px;
+.people .people-img {
+  width: 240px;
   border-radius: 50%;
   float: left;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.people .menu-content {
+.people .people-name {
   margin-left: 95px;
   overflow: hidden;
   display: flex;
@@ -1225,7 +1225,7 @@ section,
   position: relative;
 }
 
-.people .menu-content::after {
+/* .people .people-name::after {
   content: "......................................................................" "...................................................................." "....................................................................";
   position: absolute;
   left: 20px;
@@ -1234,9 +1234,9 @@ section,
   z-index: 1;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+} */
 
-.people .menu-content a {
+.people .people-name a {
   color: var(--heading-color);
   background: var(--background-color);
   padding-right: 10px;
@@ -1246,27 +1246,48 @@ section,
   transition: 0.3s;
 }
 
-.people .menu-content a:hover {
+.people .people-name a:hover {
   color: var(--accent-color);
 }
 
-.people .menu-content span {
+/* .people .people-name span {
   background: var(--background-color);
   color: var(--accent-color);
   position: relative;
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
-}
+} */
 
-.people .menu-ingredients {
-  margin-left: 95px;
+.people .people-description {
+  margin-left: 270px;
   font-style: italic;
   font-size: 14px;
   font-family: var(--nav-font);
   color: color-mix(in srgb, var(--default-color), transparent 50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 5px; 
 }
 
+.people .social {
+  display: flex;
+  gap: 10px;
+}
+
+.people .social a {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  transition: color 0.3s ease-in-out;
+}
+
+.people .social a:hover {
+  color: var(--accent-color);
+}
+
+.people .social i {
+  font-size: 16px;
+}
 
 
 /*--------------------------------------------------------------
