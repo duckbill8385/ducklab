@@ -1084,29 +1084,26 @@ section,
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
 }
 
 .recent-publications .slider-bg {
-  background-image: url("assets/img/publications/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   inset: 0;
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
 
 .recent-publications:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5); /* 기존 color-mix 제거 */
+  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
-  z-index: 1; /* 배경보다 위로 안 올라가게 설정 */
+  z-index: 2;
 }
 
 .recent-publications .section-title h2 {
