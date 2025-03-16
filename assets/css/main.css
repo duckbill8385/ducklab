@@ -1225,7 +1225,7 @@ section,
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .people .prof-name a {
@@ -1418,6 +1418,75 @@ section,
   transform: scale(1.1); /* 호버 시 확대 효과 */
 }
 
+
+/*--------------------------------------------------------------
+# Apply Section
+--------------------------------------------------------------*/
+.apply .reservation-img {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.apply .reservation-form-bg {
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+}
+
+.apply .php-email-form {
+  padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .apply .php-email-form {
+    padding: 20px;
+  }
+}
+
+.apply .php-email-form input[type=text],
+.apply .php-email-form input[type=email],
+.apply .php-email-form input[type=number],
+.apply .php-email-form input[type=date],
+.apply .php-email-form input[type=time],
+.apply .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.apply .php-email-form input[type=text]:focus,
+.apply .php-email-form input[type=email]:focus,
+.apply .php-email-form input[type=number]:focus,
+.apply .php-email-form input[type=date]:focus,
+.apply .php-email-form input[type=time]:focus,
+.apply .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.apply .php-email-form input[type=text]::placeholder,
+.apply .php-email-form input[type=email]::placeholder,
+.apply .php-email-form input[type=number]::placeholder,
+.apply .php-email-form input[type=date]::placeholder,
+.apply .php-email-form input[type=time]::placeholder,
+.apply .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.apply .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 14px 60px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.apply .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
 
 /*--------------------------------------------------------------
 # Contact Section
