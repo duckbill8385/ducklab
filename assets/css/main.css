@@ -1084,7 +1084,7 @@ section,
   --default-color: #ffffff;
   --background-color: #000000;
   --heading-color: #ffffff;
-  padding: 80px 0;
+  padding: 120px 0;
   position: relative;
 }
 
@@ -1100,7 +1100,7 @@ section,
 
 .recent-publications:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1215,6 +1215,13 @@ section,
   border-radius: 50%;
   float: left;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.people .prof-name {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .people .people-name {
