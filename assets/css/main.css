@@ -1086,6 +1086,8 @@ section,
   --heading-color: #ffffff;
   padding: 100px 0;
   position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .recent-publications .slider-bg {
@@ -1101,7 +1103,7 @@ section,
 .recent-publications:before {
   content: "";
   /* background-color: color-mix(in srgb, var(--background-color), transparent 70%); */
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1223,6 +1225,7 @@ section,
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .people .prof-name a {
