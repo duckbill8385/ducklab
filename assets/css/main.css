@@ -1184,12 +1184,12 @@ section,
 }
 
 .people .people-filters li {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 10px;
   cursor: pointer;
   display: inline-block;
   padding: 8px 12px 10px 12px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
   transition: all ease-in-out 0.3s;
@@ -1211,10 +1211,10 @@ section,
 }
 
 .people .people-img {
-  width: 80px;
+  width: 240px;
   border-radius: 50%;
   float: left;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .people .people-name {
@@ -1237,6 +1237,7 @@ section,
 } */
 
 .people .people-name a {
+  font-size: 20px;
   color: var(--heading-color);
   background: var(--background-color);
   padding-right: 10px;
@@ -1260,9 +1261,9 @@ section,
 } */
 
 .people .people-description {
-  margin-left: 95px;
+  margin-left: 270px;
   font-style: italic;
-  font-size: 14px;
+  font-size: 18px;
   font-family: var(--nav-font);
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   display: flex;
