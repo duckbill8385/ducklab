@@ -1097,13 +1097,13 @@ section,
   inset: 0;
   display: block;
   width: 100%;
-  height: 130%;
+  height: 90%;
   z-index: 1;
 }
 
 .recent-publications:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.9); /* 기존 color-mix 제거 */
+  background-color: rgba(0, 0, 0, 0.5); /* 기존 color-mix 제거 */
   position: absolute;
   inset: 0;
   z-index: 1; /* 배경보다 위로 안 올라가게 설정 */
@@ -1228,17 +1228,6 @@ section,
   position: relative;
 }
 
-/* .people .people-name::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
-  position: absolute;
-  left: 20px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-} */
-
 .people .people-name a {
   font-size: 20px;
   color: var(--heading-color);
@@ -1253,15 +1242,6 @@ section,
 .people .people-name a:hover {
   color: var(--accent-color);
 }
-
-/* .people .people-name span {
-  background: var(--background-color);
-  color: var(--accent-color);
-  position: relative;
-  z-index: 3;
-  padding: 0 10px;
-  font-weight: 600;
-} */
 
 .people .people-description {
   margin-left: 270px;
@@ -1297,68 +1277,6 @@ section,
   font-size: 20px;
 }
 
-
-/*--------------------------------------------------------------
-# People Section
---------------------------------------------------------------*/
-/* .people {
-  overflow: hidden;
-}
-
-.people .nav-tabs {
-  border: 0;
-}
-
-.people .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: var(--default-color);
-  border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.people .nav-link:hover {
-  color: var(--accent-color);
-}
-
-.people .nav-link.active {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-color: var(--background-color);
-}
-
-.people .tab-pane.active {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.people .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.people .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.people .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .people .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .people .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
-  }
-} */
 
 /*--------------------------------------------------------------
 # Publications Section
