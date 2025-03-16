@@ -1211,7 +1211,7 @@ section,
 }
 
 .people .people-img {
-  width: 240px;
+  width: 80px;
   border-radius: 50%;
   float: left;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -1260,7 +1260,7 @@ section,
 } */
 
 .people .people-description {
-  margin-left: 270px;
+  margin-left: 95px;
   font-style: italic;
   font-size: 14px;
   font-family: var(--nav-font);
