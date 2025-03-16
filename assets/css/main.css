@@ -1422,8 +1422,12 @@ section,
 /*--------------------------------------------------------------
 # Apply Section
 --------------------------------------------------------------*/
+.apply{
+  margin-bottom: 30px;
+}
+
 .apply .reservation-img {
-  min-height: 500px;
+  /* min-height: 500px; */
   background-size: cover;
   background-position: center;
 }
