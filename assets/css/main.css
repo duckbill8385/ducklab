@@ -1424,16 +1424,16 @@ section,
 # Apply Section
 --------------------------------------------------------------*/
 .apply .container{
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
-.apply .reservation-img {
-  /* min-height: 500px; */
+.reservation-img {
+  min-height: 800px;
   background-size: cover;
   background-position: center;
 }
 
-.apply .reservation-form-bg {
+.apply .apply-form-bg {
   background: color-mix(in srgb, var(--default-color), transparent 97%);
 }
 
