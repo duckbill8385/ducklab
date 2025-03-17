@@ -1423,10 +1423,6 @@ section,
 /*--------------------------------------------------------------
 # Apply Section
 --------------------------------------------------------------*/
-.apply .container2{
-  margin-bottom: 100px;
-}
-
 .apply .apply-img {
   min-height: 500px;
   background-size: contain;
@@ -1436,6 +1432,10 @@ section,
 
 .apply .apply-form-bg {
   background: color-mix(in srgb, var(--default-color), transparent 97%);
+}
+
+.apply .mb-5{
+  margin-top: 100px;
 }
 
 .apply .php-email-form {
