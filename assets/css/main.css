@@ -1428,7 +1428,7 @@ section,
 }
 
 .reservation-img {
-  /* min-height: 800px; */
+  min-height: 800px;
   background-size: cover;
   background-position: center;
 }
