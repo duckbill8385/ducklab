@@ -1424,17 +1424,18 @@ section,
 # Apply Section
 --------------------------------------------------------------*/
 .apply .container{
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .reservation-img {
-  min-height: 800px;
+  /* min-height: 800px; */
   background-size: cover;
   background-position: center;
 }
 
 .apply .apply-form-bg {
   background: color-mix(in srgb, var(--default-color), transparent 97%);
+  padding: 100px 40px;
 }
 
 .apply .php-email-form {
