@@ -1430,9 +1430,9 @@ section,
   background-position: center;
 }
 
-.apply .apply-form-bg {
+/* .apply .apply-form-bg {
   background: color-mix(in srgb, var(--default-color), transparent 97%);
-}
+} */
 
 .apply .mb-5{
   margin-top: 100px;
