@@ -1317,10 +1317,17 @@ section,
 }
 
 
-.publications .content h3 {
+.publications .section-title h2 {
   font-size: 1.75rem;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+/* .publications .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+} */
 
 .publications .content ul {
   list-style: none;
@@ -1355,23 +1362,29 @@ section,
   padding: 0;
 }
 
-.publications .publication-list li {
+.publications .publication-list .isotope-item {
   padding: 15px;
   border-bottom: 1px solid #ddd;
+  display: block;
 }
+
+/* .publications .publication-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+} */
 
 .publications .publication-list h5 {
   margin: 10px 0 5px;
   font-weight: 550;
 }
 
-.publication-list h5 a {
+.publications .publication-list h5 a {
   color: #000; /* 기본 검정색 */
   text-decoration: none;
   transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 */
 }
 
-.publication-list h5 a:hover {
+.publications .publication-list h5 a:hover {
   color: #ffb03b; /* 호버 시 주황색 */
   text-decoration: none; /* 밑줄 유지 안 함 */
 }
@@ -1398,7 +1411,6 @@ section,
 .publications .badge.nlp { background-color: #B2DFB2; } 
 .publications .badge.ml { background-color: #91BFE2 }
 .publications .badge.etc { background-color: #BDBDBD; } 
-.publications .badge.project { background-color: #F4C391; } 
 
 .publications .legend {
   margin-bottom: 15px; 
@@ -1408,6 +1420,98 @@ section,
   margin-right: 10px;
 }
 
+
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+
+.projects .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.projects .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.projects .content ul i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.projects .content p:last-child {
+  margin-bottom: 0;
+}
+
+.projects .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+
+.projects .project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.projects .project-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.projects .project-list h5 {
+  margin: 10px 0 5px;
+  font-weight: 550;
+}
+
+.projects .project-list h5 a {
+  color: #000; /* 기본 검정색 */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+.projects .project-list h5 a:hover {
+  color: #ffb03b; /* 호버 시 주황색 */
+  text-decoration: none; /* 밑줄 유지 안 함 */
+}
+
+.projects .project-list p {
+  margin: 0;
+}
+
+.projects .section-title {
+  margin-top: 50px;
+}
+
+.projects .badge {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.projects .badge.project { background-color: #F4C391; } 
+
+.projects .legend {
+  margin-bottom: 15px; 
+}
+
+.projects .legend .badge {
+  margin-right: 10px;
+}
 
 /*--------------------------------------------------------------
 # Gallery Section
