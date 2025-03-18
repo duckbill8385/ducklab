@@ -1451,14 +1451,18 @@ section,
   font-size: 26px;
 }
 
-.apply .text-center p {
+.apply .text-container p {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.apply .text-center span {
+.apply .text-container span {
   font-size: 18px;
+}
+
+.apply .text-container {
+  text-align: left; 
 }
 
 /* .apply .apply-form-bg {
