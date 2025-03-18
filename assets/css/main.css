@@ -1290,6 +1290,33 @@ section,
 /*--------------------------------------------------------------
 # Publications Section
 --------------------------------------------------------------*/
+.publications .publication-filters {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.publications .publication-filters li {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  transition: all ease-in-out 0.3s;
+  font-family: var(--heading-font);
+}
+
+.publications .publication-filters li:hover,
+.publications .publication-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+
 .publications .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -1427,12 +1454,11 @@ section,
 .apply .text-center p {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .apply .text-center span {
   font-size: 18px;
-  color: var(--accent-color);
 }
 
 /* .apply .apply-form-bg {
