@@ -1329,22 +1329,15 @@ section,
   font-weight: 700;
 } */
 
-.publications .content ul {
+/* .publications .content ul {
   list-style: none;
   padding: 0;
-}
+} */
 
-.publications .content ul li {
+/* .publications .content ul li {
   padding: 10px 0 0 0;
   display: flex;
-}
-
-.publications .content ul i {
-  color: var(--accent-color);
-  margin-right: 0.5rem;
-  line-height: 1.2;
-  font-size: 1.25rem;
-}
+} */
 
 .publications .content p:last-child {
   margin-bottom: 0;
@@ -1365,7 +1358,8 @@ section,
 .publications .publication-list .isotope-item {
   padding: 15px;
   border-bottom: 1px solid #ddd;
-  display: block;
+  padding: 10px 0 0 0;
+  display: flex;
 }
 
 /* .publications .publication-list li {
