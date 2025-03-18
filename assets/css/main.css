@@ -1426,14 +1426,13 @@ section,
 
 .apply .text-center p {
   font-size: 16px;
-  font-family: var(--default-font);
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .apply .text-center span {
-  font-size: 17px;
-  font-family: var(--accent-color);
+  font-size: 18px;
+  color: var(--accent-color);
 }
 
 /* .apply .apply-form-bg {
