@@ -1123,17 +1123,6 @@ section,
   font-size: 26px;
 }
 
-.events .event-item .price {
-  font-size: 26px;
-  font-family: var(--default-font);
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.events .event-item .price span {
-  border-bottom: 2px solid var(--accent-color);
-}
-
 .recent-publications .event-item ul {
   list-style: none;
   padding: 0;
@@ -1443,7 +1432,8 @@ section,
 }
 
 .apply .text-center span {
-  border-bottom: 2px solid var(--accent-color);
+  font-size: 17px;
+  font-family: var(--accent-color);
 }
 
 /* .apply .apply-form-bg {
