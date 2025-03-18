@@ -1424,7 +1424,7 @@ section,
 # Apply Section
 --------------------------------------------------------------*/
 .apply .apply-img {
-  min-height: 300px;
+  min-height: 350px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1433,6 +1433,16 @@ section,
 .apply h3 {
   font-weight: 700;
   font-size: 26px;
+}
+
+.apply .apply-form-bg {
+  font-size: 16px;
+  font-family: var(--default-font);
+  font-weight: 700;
+}
+
+.apply .apply-form-bg span {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 /* .apply .apply-form-bg {
