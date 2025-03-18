@@ -1435,13 +1435,14 @@ section,
   font-size: 26px;
 }
 
-.apply .apply-form-bg {
+.apply .text-center p {
   font-size: 16px;
   font-family: var(--default-font);
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.apply .apply-form-bg span {
+.apply .text-center span {
   border-bottom: 2px solid var(--accent-color);
 }
 
