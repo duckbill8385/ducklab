@@ -1547,13 +1547,10 @@ section,
   padding: 30px 30px 70px 30px;
 }
 
+.apply .card-item:hover span,
 .apply .card-item:hover h4 a,
 .apply .card-item:hover p {
   color: var(--contrast-color);
-}
-
-.apply .card-item:hover span{
-  color: var(--heading-color);
 }
 
 
