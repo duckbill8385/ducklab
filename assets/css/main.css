@@ -1520,6 +1520,7 @@ section,
 .apply .card-item span {
   color: var(--accent-color);
   font-size: 17px;
+  font-weight: 500;
 }
 
 .apply .card-item h4 {
@@ -1546,11 +1547,15 @@ section,
   padding: 30px 30px 70px 30px;
 }
 
-.apply .card-item:hover span,
 .apply .card-item:hover h4 a,
 .apply .card-item:hover p {
   color: var(--contrast-color);
 }
+
+.apply .card-item:hover span{
+  color: var(--heading-color);
+}
+
 
 .apply .apply-img {
   min-height: 350px;
