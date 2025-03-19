@@ -1304,7 +1304,7 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 8px 12px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
   transition: all ease-in-out 0.3s;
@@ -1337,6 +1337,7 @@ section,
   border-bottom: 1px solid #ddd;
   padding: 10px 0 0 0;
   display: block;
+  margin-bottom: 10px;
 }
 
 .publications .publication-list h5 {
@@ -1509,6 +1510,51 @@ section,
 /*--------------------------------------------------------------
 # Apply Section
 --------------------------------------------------------------*/
+.apply .card-item {
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  /* padding: 50px 30px; */
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+  position: relative;
+}
+
+.apply .card-item span {
+  color: var(--accent-color);
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.apply .card-item h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.apply .card-item h4 a {
+  color: var(--heading-color);
+}
+
+.apply .card-item p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.apply .card-item:hover {
+  background: var(--accent-color);
+  padding: 30px 30px 70px 30px;
+}
+
+.apply .card-item:hover span,
+.apply .card-item:hover h4 a,
+.apply .card-item:hover p {
+  color: var(--contrast-color);
+}
+
 .apply .apply-img {
   min-height: 350px;
   background-size: contain;
@@ -1516,28 +1562,23 @@ section,
   background-position: center;
 }
 
-.apply h3 {
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.apply .text-container p {
+/* .apply .text-container p {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
-}
+} */
 
-.apply .text-container span {
+/* .apply .text-container span {
   font-size: 17px;
-}
+} */
 
-.apply .text-container {
+/* .apply .text-container {
   text-align: left; 
-}
+} */
 
-.apply .apply-form-bg {
+/* .apply .apply-form-bg {
   background: color-mix(in srgb, var(--default-color), transparent 97%);
-}
+} */
 
 .apply .mb-5{
   margin-top: 100px;
