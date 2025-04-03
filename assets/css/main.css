@@ -1394,9 +1394,10 @@ section,
 }
 
 .publications .tier-label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333; /* 필요 시 강조색으로 변경 */
+  font-size: 13px;
+  color: #888;
+  font-weight: normal;
+  font-style: italic;
 }
 
 /*--------------------------------------------------------------
