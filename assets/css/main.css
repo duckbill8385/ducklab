@@ -1098,6 +1098,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  object-position: right bottom;
 }
 
 .recent-publications:before {
@@ -1394,8 +1395,8 @@ section,
 }
 
 .publications .tier-label {
-  font-size: 13px;
-  color: #888;
+  font-size: 14px;
+  color: #666;
   font-weight: normal;
   font-style: italic;
 }
