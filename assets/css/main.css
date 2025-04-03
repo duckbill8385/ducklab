@@ -1386,7 +1386,18 @@ section,
   margin-right: 10px;
 }
 
+.publications .conf-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
 
+.publications .tier-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; /* 필요 시 강조색으로 변경 */
+}
 
 /*--------------------------------------------------------------
 # Projects Section
