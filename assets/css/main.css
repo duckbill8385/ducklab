@@ -1373,10 +1373,10 @@ section,
   margin-bottom: 5px;
 }
 
-.publications .badge.vision { background-color: #F4A7B9; } 
-.publications .badge.nlp { background-color: #B2DFB2; } 
-.publications .badge.ml { background-color: #91BFE2 }
-.publications .badge.etc { background-color: #BDBDBD; } 
+.publications .badge.publication1 { background-color: #F4A7B9; } 
+.publications .badge.publication2 { background-color: #91BFE2 }
+.publications .badge.publication3 { background-color: #B2DFB2; } 
+.publications .badge.publication4 { background-color: #BDBDBD; } 
 
 .publications .legend {
   margin-top: 40px; 
