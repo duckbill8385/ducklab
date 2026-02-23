@@ -1167,6 +1167,66 @@ section,
   background-color: var(--accent-color);
 }
 
+
+.recent-publications .pub-swiper-controls {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  /* "영역이 분리돼 보이게" 살짝 바 형태로 */
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+/* 컨트롤 바 안에서는 pagination 여백 제거 */
+.recent-publications .pub-swiper-controls .swiper-pagination {
+  margin-top: 0;
+  position: static;
+}
+
+/* 이전/다음 버튼 */
+.recent-publications .pub-swiper-prev,
+.recent-publications .pub-swiper-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: 0.2s;
+}
+
+/* 화살표(아이콘 라이브러리 없어도 동작) */
+.recent-publications .pub-swiper-prev::before {
+  content: "‹";
+  font-size: 26px;
+  line-height: 1;
+  color: var(--default-color);
+}
+.recent-publications .pub-swiper-next::before {
+  content: "›";
+  font-size: 26px;
+  line-height: 1;
+  color: var(--default-color);
+}
+
+.recent-publications .pub-swiper-prev:hover,
+.recent-publications .pub-swiper-next:hover {
+  border-color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+.recent-publications .pub-swiper-prev:active,
+.recent-publications .pub-swiper-next:active {
+  transform: translateY(1px);
+}
+
 /*--------------------------------------------------------------
 # People Section
 --------------------------------------------------------------*/
