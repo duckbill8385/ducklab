@@ -1167,7 +1167,6 @@ section,
   background-color: var(--accent-color);
 }
 
-/* ✅ 슬라이드 아래 컨트롤 영역(분리) */
 .recent-publications .pub-swiper-controls {
   margin-top: 26px;
   display: flex;
@@ -1176,7 +1175,6 @@ section,
   gap: 14px;
 }
 
-/* pagination은 가운데로 */
 .recent-publications .pub-swiper-controls .swiper-pagination {
   position: static;
   margin: 0;
@@ -1185,41 +1183,44 @@ section,
   justify-content: center;
 }
 
-/* ✅ 좌/우 버튼: 메인 캐러셀(chevron) 분위기 + 주황 포인트 */
 .recent-publications .pub-swiper-prev,
 .recent-publications .pub-swiper-next {
   width: 46px;
   height: 46px;
-  border-radius: 999px;
+  padding: 0;
 
-  border: 2px solid var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+
   color: var(--accent-color);
-
   display: grid;
   place-items: center;
   cursor: pointer;
 
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* hover 시 더 진하게 */
 .recent-publications .pub-swiper-prev:hover,
 .recent-publications .pub-swiper-next:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  color: color-mix(in srgb, var(--accent-color), #000 20%);
 }
 
-/* 클릭감 */
 .recent-publications .pub-swiper-prev:active,
 .recent-publications .pub-swiper-next:active {
   transform: translateY(1px);
 }
 
-/* 아이콘 크기 */
 .recent-publications .pub-swiper-prev .bi,
 .recent-publications .pub-swiper-next .bi {
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1;
+}
+
+.recent-publications .pub-swiper-prev:focus-visible,
+.recent-publications .pub-swiper-next:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
 }
 
 /*--------------------------------------------------------------
@@ -1570,6 +1571,13 @@ section,
   color: white;
   display: inline-block;
   margin-bottom: 5px;
+}
+
+.projects .tier-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .projects .badge.project { background-color: #F4C391; } 
