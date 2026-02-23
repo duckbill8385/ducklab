@@ -218,13 +218,13 @@
               "autoplay": { "delay": 5000 },
               "slidesPerView": "auto",
               "pagination": {
-                "el": ".recent-publications .swiper-pagination",
+                "el": ".recent-publications .pub-swiper-controls .swiper-pagination",
                 "type": "bullets",
                 "clickable": true
               },
               "navigation": {
-                "nextEl": ".recent-publications .swiper-button-next",
-                "prevEl": ".recent-publications .swiper-button-prev"
+                "nextEl": ".recent-publications .pub-swiper-next",
+                "prevEl": ".recent-publications .pub-swiper-prev"
               }
             }
           </script>
@@ -317,10 +317,17 @@
 
           </div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="pub-swiper-controls">
+            <button type="button" class="pub-swiper-prev" aria-label="Previous">
+              <span class="bi bi-chevron-left" aria-hidden="true"></span>
+            </button>
 
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+
+            <button type="button" class="pub-swiper-next" aria-label="Next">
+              <span class="bi bi-chevron-right" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
       </div>
