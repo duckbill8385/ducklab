@@ -1145,7 +1145,7 @@ section,
 
 .recent-publications .swiper {
   padding: 0 60px;
-  overflow: visible; 
+  overflow: hidden; 
 }
 
 .recent-publications .swiper-wrapper {
