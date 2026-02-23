@@ -1143,6 +1143,11 @@ section,
   margin-bottom: 0;
 }
 
+.recent-publications .swiper {
+  padding: 0 60px;
+  overflow: visible; 
+}
+
 .recent-publications .swiper-wrapper {
   height: auto;
 }
@@ -1163,24 +1168,55 @@ section,
   background-color: var(--accent-color);
 }
 
-.recent-publications .swiper-button-next,
-.recent-publications .swiper-button-prev {
-  color: var(--accent-color); /* 사이트 메인 포인트 색상 적용 */
-  transition: 0.3s;
+.recent-publications .swiper-button-prev,
+.recent-publications .swiper-button-next {
+  color: var(--accent-color);
+  z-index: 10;
+  top: 50%; /* 세로 중앙 정렬 */
+  transform: translateY(-50%); /* 정확한 중앙 보정 */
+  width: 40px;
+  height: 40px;
 }
+
+.recent-publications .swiper-button-prev {
+  left: 0px; /* 패딩 영역 안쪽 왼쪽에 배치 */
+}
+
+.recent-publications .swiper-button-next {
+  right: 0px; /* 패딩 영역 안쪽 오른쪽에 배치 */
+}
+
+/* 3. 화살표 모양(아이콘) 크기 및 두께 조정 */
+.recent-publications .swiper-button-next::after,
+.recent-publications .swiper-button-prev::after {
+  font-size: 24px; /* 너무 크면 투박하므로 적당히 조절 */
+  font-weight: bold;
+}
+
+/* 4. 화면이 좁은 모바일에서는 화살표를 숨기거나 더 작게 조정 (선택) */
+@media (max-width: 1200px) {
+  .recent-publications .swiper {
+    padding: 0 40px; /* 좁은 화면에선 패딩 축소 */
+  }
+}
+
+@media (max-width: 768px) {
+  /* 모바일에서는 터치 슬라이드가 위주이므로 화살표를 숨기는 것이 깔끔할 수 있습니다 */
+  .recent-publications .swiper-button-next,
+  .recent-publications .swiper-button-prev {
+    display: none; 
+  }
+  .recent-publications .swiper {
+    padding: 0; /* 모바일은 여백 없이 꽉 차게 */
+  }
+}
+
 
 .recent-publications .swiper-button-next:hover,
 .recent-publications .swiper-button-prev:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 30%); /* 마우스 올렸을 때 색상 변환 */
 }
 
-/* 모바일 화면에서는 화살표가 콘텐츠를 가리지 않도록 크기 축소 */
-@media (max-width: 768px) {
-  .recent-publications .swiper-button-next::after,
-  .recent-publications .swiper-button-prev::after {
-    font-size: 24px;
-  }
-}
 
 /*--------------------------------------------------------------
 # People Section
