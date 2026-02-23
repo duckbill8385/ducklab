@@ -1163,7 +1163,24 @@ section,
   background-color: var(--accent-color);
 }
 
+.recent-publications .swiper-button-next,
+.recent-publications .swiper-button-prev {
+  color: var(--accent-color); /* 사이트 메인 포인트 색상 적용 */
+  transition: 0.3s;
+}
 
+.recent-publications .swiper-button-next:hover,
+.recent-publications .swiper-button-prev:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 30%); /* 마우스 올렸을 때 색상 변환 */
+}
+
+/* 모바일 화면에서는 화살표가 콘텐츠를 가리지 않도록 크기 축소 */
+@media (max-width: 768px) {
+  .recent-publications .swiper-button-next::after,
+  .recent-publications .swiper-button-prev::after {
+    font-size: 24px;
+  }
+}
 
 /*--------------------------------------------------------------
 # People Section
