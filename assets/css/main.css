@@ -1168,64 +1168,51 @@ section,
 }
 
 
-.recent-publications .pub-swiper-controls {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
+/* Swiper 영역 기준 잡기 */
+.recent-publications .swiper {
+  position: relative;
+}
 
-  /* "영역이 분리돼 보이게" 살짝 바 형태로 */
-  padding: 10px 14px;
+/* 좌/우 버튼 공통 */
+.recent-publications .swiper-button-prev,
+.recent-publications .swiper-button-next {
+  width: 52px;
+  height: 52px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
+
+  /* 주황 테마 */
+  border: 2px solid var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+
+  /* 슬라이드 위로 올라오게 */
+  z-index: 5;
+
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* 컨트롤 바 안에서는 pagination 여백 제거 */
-.recent-publications .pub-swiper-controls .swiper-pagination {
-  margin-top: 0;
-  position: static;
+/* hover 시 더 진하게 */
+.recent-publications .swiper-button-prev:hover,
+.recent-publications .swiper-button-next:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
-/* 이전/다음 버튼 */
-.recent-publications .pub-swiper-prev,
-.recent-publications .pub-swiper-next {
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
-  background: rgba(255, 255, 255, 0.08);
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  transition: 0.2s;
-}
-
-/* 화살표(아이콘 라이브러리 없어도 동작) */
-.recent-publications .pub-swiper-prev::before {
-  content: "‹";
-  font-size: 26px;
-  line-height: 1;
-  color: var(--default-color);
-}
-.recent-publications .pub-swiper-next::before {
-  content: "›";
-  font-size: 26px;
-  line-height: 1;
-  color: var(--default-color);
-}
-
-.recent-publications .pub-swiper-prev:hover,
-.recent-publications .pub-swiper-next:hover {
-  border-color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 75%);
-}
-
-.recent-publications .pub-swiper-prev:active,
-.recent-publications .pub-swiper-next:active {
+/* 클릭감 */
+.recent-publications .swiper-button-prev:active,
+.recent-publications .swiper-button-next:active {
   transform: translateY(1px);
 }
+
+/* 기본 swiper 아이콘 대신 우리가 원하는 화살표로 교체 */
+.recent-publications .swiper-button-prev::after,
+.recent-publications .swiper-button-next::after {
+  font-family: inherit;   /* swiper-icons 대신 기본 폰트 사용 */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.recent-publications .swiper-button-prev::after { content: "‹"; }
+.recent-publications .swiper-button-next::after { content: "›"; }
 
 /*--------------------------------------------------------------
 # People Section
