@@ -1431,10 +1431,10 @@ section,
   margin-bottom: 5px;
 }
 
-.publications .badge.publication1 { background-color: #F4A7B9; } 
-.publications .badge.publication2 { background-color: #91BFE2 }
-.publications .badge.publication3 { background-color: #B2DFB2; } 
-.publications .badge.publication4 { background-color: #BDBDBD; } 
+.publications .badge.publication_ic { background-color: #F4A7B9; } 
+.publications .badge.publication_dc { background-color: #F9D3DC }
+.publications .badge.publication_ij { background-color: #91BFE2; } 
+.publications .badge.publication_dj { background-color: #C8DFF0; } 
 
 .publications .legend {
   margin-top: 40px; 
