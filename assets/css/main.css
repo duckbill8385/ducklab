@@ -1459,13 +1459,11 @@ section,
   font-style: italic;
 } */
 
-.publications .tier-label,
-.projects .tier-label {
+.publications .tier-label {
   margin-left: 8px;
   font-size: 14px;
   color: color-mix(in srgb, var(--accent-color), #8a4b00 25%);
   font-weight: 600;
-  font-style: italic;
 }
 
 .publications .publication-links {
@@ -1612,6 +1610,12 @@ section,
   font-style: italic;
 } */
 
+.projects .tier-label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--accent-color), #8a4b00 25%);
+  font-weight: 600;
+}
 
 .projects .badge.project { background-color: #F4C391; } 
 
