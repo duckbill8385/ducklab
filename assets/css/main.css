@@ -1432,9 +1432,9 @@ section,
 }
 
 .publications .badge.publication_ic { background-color: #F4A7B9; } 
-.publications .badge.publication_dc { background-color: #F9D3DC }
+.publications .badge.publication_dc { background-color: #fac2cf }
 .publications .badge.publication_ij { background-color: #91BFE2; } 
-.publications .badge.publication_dj { background-color: #C8DFF0; } 
+.publications .badge.publication_dj { background-color: #aed3ec; } 
 
 .publications .legend {
   margin-top: 40px; 
@@ -1459,12 +1459,12 @@ section,
   font-style: italic;
 } */
 
-.publications .tier-label {
+/* .publications .tier-label {
   margin-left: 8px;
   font-size: 14px;
   color: color-mix(in srgb, var(--accent-color), #8a4b00 25%);
   font-weight: 600;
-}
+} */
 
 .publications .publication-links {
   margin-top: 4px; 
@@ -1610,10 +1610,12 @@ section,
   font-style: italic;
 } */
 
-.projects .tier-label {
+.projects .tier-label,
+.publications .tier-label {
   margin-left: 8px;
   font-size: 14px;
-  color: color-mix(in srgb, var(--accent-color), #8a4b00 25%);
+  color: var(--accent-color);
+  /* color: color-mix(in srgb, var(--accent-color), #8a4b00 25%); */
   font-weight: 600;
 }
 
