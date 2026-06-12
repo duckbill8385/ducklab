@@ -1313,7 +1313,7 @@ section,
 .people .people-description {
   margin-left: 270px;
   /* font-style: italic; */
-  font-size: 16px;
+  font-size: 17px;
   font-family: var(--nav-font);
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   display: flex;
