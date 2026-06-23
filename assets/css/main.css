@@ -467,6 +467,9 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
+    background: transparent;
+    border: 0;
+    padding: 0;
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
@@ -1259,13 +1262,18 @@ section,
 .people .people-item {
   margin-top: 50px;
   position: relative;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  column-gap: 30px;
+  align-items: start;
 }
 
 .people .people-img {
   width: 240px;
   border-radius: 50%;
-  float: left;
+  float: none;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  grid-row: 1 / span 2;
 }
 
 .people .prof-name {
@@ -1288,11 +1296,12 @@ section,
 }
 
 .people .people-name {
-  margin-left: 95px;
+  margin-left: 0;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   position: relative;
+  grid-column: 2;
 }
 
 .people .people-name a {
@@ -1311,7 +1320,7 @@ section,
 }
 
 .people .people-description {
-  margin-left: 270px;
+  margin-left: 0;
   /* font-style: italic; */
   font-size: 17px;
   font-family: var(--nav-font);
@@ -1321,6 +1330,7 @@ section,
   align-items: flex-start;
   gap: 5px; 
   word-break: break-all;
+  grid-column: 2;
 }
 
 .people .people-description p {
@@ -1348,6 +1358,34 @@ section,
 
 .people .social i {
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .people .people-item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 16px;
+  }
+
+  .people .people-img,
+  .people .people-name,
+  .people .people-description {
+    grid-column: 1;
+  }
+
+  .people .people-img {
+    width: min(220px, 70vw);
+    grid-row: auto;
+  }
+
+  .people .people-name {
+    justify-content: center;
+  }
+
+  .people .people-description {
+    align-items: center;
+  }
 }
 
 
@@ -1448,6 +1486,12 @@ section,
 
 .publications .legend .badge {
   margin-right: 10px;
+}
+
+.publications .publication-legend {
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .publications .conf-info {
@@ -1571,27 +1615,6 @@ section,
   margin: 0;
 }
 
-.projects .project-list .role {
-  display: inline-flex;
-  align-items: center;
-  margin: 4px 0 6px;
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  letter-spacing: -0.01em;
-}
-
-.projects .project-list .role::before {
-  content: "●";
-  font-size: 0.65rem;
-  margin-right: 6px;
-  color: color-mix(in srgb, var(--accent-color), transparent 15%);
-}
-
-.projects .project-list .role strong {
-  color: color-mix(in srgb, var(--accent-color), #8a4b00 25%);
-  font-weight: 700;
-}
 
 
 .projects .section-title {
@@ -1733,6 +1756,10 @@ section,
   background-position: center;
 }
 
+.apply .apply-logo-img {
+  background-image: url("../img/duck_lab_logo_small.jpg");
+}
+
 /* .apply .text-container p {
   font-size: 16px;
   font-weight: 700;
@@ -1753,4 +1780,10 @@ section,
 
 .apply .mb-5{
   margin-top: 100px;
+}
+
+.apply .map-frame {
+  width: 100%;
+  height: 400px;
+  border: 0;
 }
