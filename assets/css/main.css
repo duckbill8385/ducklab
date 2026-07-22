@@ -1021,6 +1021,45 @@ section,
   font-size: 1.25rem;
 }
 
+.news .content .news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: 0.45rem;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: 0.1em;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.news .content .news-link i {
+  margin: 0;
+  color: currentColor;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+.news .content .news-link:hover,
+.news .content .news-link:focus-visible {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-1px);
+}
+
+.news .content .news-link:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  outline-offset: 2px;
+}
+
 .news .content p:last-child {
   margin-bottom: 0;
 }
