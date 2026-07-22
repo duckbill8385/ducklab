@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Default profile silhouette</title>
+  <desc id="desc">A neutral gray head-and-shoulders silhouette.</desc>
+  <rect width="600" height="800" fill="#f1f3f5"/>
+  <circle cx="300" cy="270" r="128" fill="#adb5bd"/>
+  <path d="M75 800c0-176 101-318 225-318s225 142 225 318H75z" fill="#adb5bd"/>
+</svg>
