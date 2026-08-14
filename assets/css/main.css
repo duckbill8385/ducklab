@@ -1499,6 +1499,10 @@ section,
   margin: 0;
 }
 
+.publications .publication-list .corresponding-note {
+  color: color-mix(in srgb, var(--default-color), transparent 42%);
+}
+
 .publications .section-title {
   margin-top: 50px;
 }
