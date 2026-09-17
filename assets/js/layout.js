@@ -80,7 +80,7 @@
           <div class="col-lg-2 col-md-4">
             <h4>Follow Us</h4>
             <div class="social-links d-flex">
-              <a href="https://drive.google.com/file/d/1GwWGlE_GlDso7_EF1gP_MPxb_xKeDXj1/view?usp=sharing" class="cv" ${externalAttrs} aria-label="Curriculum vitae"><i class="bi bi-file-earmark-person" aria-hidden="true"></i></a>
+              <a href="https://drive.google.com/file/d/11OWzDJobcwwP8T1oBz_0UdVAFAfnUP4Y/view?usp=sharing" class="cv" ${externalAttrs} aria-label="Curriculum vitae"><i class="bi bi-file-earmark-person" aria-hidden="true"></i></a>
               <a href="https://scholar.google.co.kr/citations?user=wlhSowsAAAAJ&hl=ko" class="google-scholar" ${externalAttrs} aria-label="Google Scholar"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></a>
               <a href="https://github.com/sunoh-kim" class="github" ${externalAttrs} aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
               <a href="https://www.linkedin.com/in/sunoh-kim-a0a1a5162/" class="linkedin" ${externalAttrs} aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
